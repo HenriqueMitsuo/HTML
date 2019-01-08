@@ -1,20 +1,175 @@
 <!DOCTYPE html>
-
 <html>
-
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <title>Page Title</title>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    
+        <title>Exemplo de HTML</title>
+        <!-- REFERENCIAS: https://www.w3schools.com/tags/default.asp -->
     </head>
     <body>
-        hello world!
-    </body>
+        <!-- HEADING = Cabeçalho -->
+        <h1>This is a heading 1</h1>
+        <h2>Cabeçalho 2</h2>
+        <h3>Cabeçalho 3</h3>
+        <h4>Cabeçalho 4</h4>
+        <h5>Cabeçalho 5</h5>
+        <h6>Cabeçalho 6</h6>
 
+        <!-- PARAGRAPH = Paragrafo -->
+        <!-- STRONG = Negrito -->
+        <!-- EM = Enfase/Itálico-->
+        <h1><p>This is a paragraph</p></h1>
+        <p>
+           primeiro paragrafo Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus assumenda labore ipsam. <strong>Placeat, aut eligendi quae at explicabo exercitationem</strong>, repudiandae, eum blanditiis <em>voluptatum magnam numquam modi vel quasi itaque soluta</em>.
+        </p>
+        <p>
+            segundo paragrafo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente earum est, quasi accusamus in quas accusantium quo repellendus, repellat, odio amet molestiae expedita beatae. Cupiditate molestiae a quo eum atque.
+        </p>
+
+        <!-- A = Link-->
+        <!-- 
+            # ATRIBUTOS #
+            href: endereço de redirecionamento
+            target: onde abrir a página
+        -->
+        <a href="http://google.com" target="_blank">Link</a>
+
+        <!-- LISTAS -->
+        <!-- UL = Lista não ordenada -->
+        <!-- OL = Lista ordenada -->
+        <!-- LI = Item da lista -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ul>
+
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+
+        <!-- Tabelas -->
+        <!-- TABLE = Tabela -->
+        <!-- THEAD = Cabeçalho da tabela -->
+        <!-- TBODY = Corpo da tabela -->
+        <!-- TR = Linha da tabela -->
+        <!-- TD = Coluna da tabela -->
+        <table>
+            <thead>
+                <tr> 
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Henrique Mitsuo</td>
+                    <td>email@email.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>email@email.com</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Eliney Sabino</td>
+                    <td>email@email.com</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- BR = Quebra de linha -->
+        <br>
+        <!-- HR = Regua Horizontal -->
+        <hr>
+        <br>
+
+        <!-- Formularios -->
+        <!-- FORM = Formulario -->
+        <form>
+            <!-- DIV = Divisão -->
+            <div>
+                <!-- LABEL = Etiqueta -->
+                <label>Nome</label>
+                <!-- INPUT = Controle-->
+                <!-- 
+                    # ATRIBUTOS #
+                    type: tipo de controle a ser utilizado
+                    name: nome do controle
+                    placeholder: texto de exemplo
+                -->
+                <input type="text" name="txt_Nome" placeholder="Digite seu Nome">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type="email" name="txt_Email">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Texto</label>
+                <textarea name="Texto"></textarea>
+            </div>
+
+            <br>
+
+            <div>
+                <label>genero</label>
+                <!-- SELECT = Lista Drop-down -->
+                <select name="genero">
+                    <!-- OPTION = Opções da lista -->
+                    <option value="masculino">M</option>
+                    <option value="feminino">F</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Idade</label>
+                <input type="number" name="idade">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Aniversário</label>
+                <input type="date" name="aniversario">
+            </div>
+
+            <br>
+
+            <div>
+                <!-- SUBMIT = Botão para envio do formulário -->
+                <input type="submit" value="submit" name="submit">
+            </div>
+        </form>
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- IMG = Imagem -->
+        <!-- 
+            # ATRIBUTOS #
+            src: Local da imagem
+            alt: texto caso não encontre a imagem
+            width: Largura
+            height: Altura
+        -->
+        <a href="html5.html">
+            <img src="html.png" alt="Logo HTML5" width="200" height="200">
+        </a>
+    </body>
 </html>
